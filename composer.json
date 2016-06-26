@@ -1,0 +1,13 @@
+{
+    "name": "knpuniversity/micro-symfony",
+    "require": {
+        "symfony/symfony": "^2.7",
+        "sensio/framework-extra-bundle": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Grzegorz Szaliński",
+            "email": "grzegorz.szalinski@gmail.com"
+        }
+    ]
+}
