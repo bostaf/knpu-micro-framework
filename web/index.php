@@ -13,11 +13,14 @@ use Symfony\Component\Debug\Debug;
 // for more information
 umask(0000);
 
-$env = 'dev';
-$debug = true;
-
 $loader = require __DIR__.'/../config/autoload.php';
 require_once __DIR__ . '/../AppKernel.php';
+
+$dotenv = new \Dotenv\Dotenv(__DIR__ . '/../');
+$dotenv->load();
+
+$env = $_SERVER['SYMFONY_ENV'];
+$debug = $_SERVER['SYMFONY_DEBUG'];
 
 if ($debug) {
     Debug::enable();
