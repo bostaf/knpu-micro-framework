@@ -16,7 +16,7 @@ umask(0000);
 $env = 'dev';
 $debug = true;
 
-$loader = require __DIR__.'/../vendor/autoload.php';
+$loader = require __DIR__.'/../config/autoload.php';
 require_once __DIR__ . '/../AppKernel.php';
 
 if ($debug) {

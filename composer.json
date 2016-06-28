@@ -9,5 +9,10 @@
             "name": "Grzegorz Szaliński",
             "email": "grzegorz.szalinski@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "AppBundle\\": "AppBundle/"
+        }
+    }
 }
