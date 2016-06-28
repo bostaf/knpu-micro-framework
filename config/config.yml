@@ -6,3 +6,14 @@ framework:
         engines: [twig]
     profiler:
         enabled: %kernel.debug%
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: %log_action_level%
+            handler:      nested
+        nested:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug

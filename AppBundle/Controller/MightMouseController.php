@@ -23,6 +23,9 @@ class MightMouseController extends ContainerAware
                 'mighty_mouse/rescue.html.twig',
                 array('quote' => 'Here I come to save the day!')
             );
+
+        dump($this->container);
+
         return new Response($html);
     }
 }

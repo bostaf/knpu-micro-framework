@@ -19,10 +19,12 @@ class AppKernel extends Kernel
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new \AppBundle\AppBundle(),
+            new \Symfony\Bundle\MonologBundle\MonologBundle(),
         );
 
         if ($this->getEnvironment() == 'dev') {
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            $bundles[] = new \Symfony\Bundle\DebugBundle\DebugBundle();
         }
 
         return $bundles;

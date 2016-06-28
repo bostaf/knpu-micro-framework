@@ -3,7 +3,8 @@
     "require": {
         "symfony/symfony": "^2.7",
         "sensio/framework-extra-bundle": "^3.0",
-        "vlucas/phpdotenv": "2.1"
+        "vlucas/phpdotenv": "2.1",
+        "symfony/monolog-bundle": "^2.11"
     },
     "authors": [
         {
