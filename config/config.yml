@@ -1,11 +1,8 @@
 framework:
-    secret: qwerty123456
+    secret: %secret%
     router:
         resource: %kernel.root_dir%/config/routing.yml
     templating:
         engines: [twig]
     profiler:
         enabled: %kernel.debug%
-
-web_profiler:
-    toolbar: %kernel.debug%
